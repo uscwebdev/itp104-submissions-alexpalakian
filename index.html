@@ -10,34 +10,83 @@
             width: auto;
             height: 200px;
         }
+        #container {
+            width: 900px;
+            margin-left: auto;
+			margin-right: auto;
+        }
+        #second {
+            display: flex;
+            padding: 15px;
+        }
+        .column1 {
+            justify-content: left;
+            /* margin-right: 30px; */
+        }
+        .column2 {
+            justify-content: right;
+            margin-left: 55px;
+            margin-right: 50px
+        }
+        #third {
+            display: flex;
+            padding: 15px;
+        }
+        .column3 {
+            justify-content: left;
+            /* margin-right: 30px; */
+        }
+        .column4 {
+            justify-content: right;
+            margin-left: 145px;
+            margin-right: 50px
+        }
     </style>
 </head>
 <body>
-    <h1>Alex Palakian</h1>
-    <p><a href="mailto:palakian@usc.edu">palakian@usc.edu</a></p>
-    <p>Favorite color: <em>Lime Green</em></p>
-    <p>Favorite website: <a href="https://www.amazon.com/">Amazon</a></p>
-    <p>Favorite activity: </p>
-    <img src="https://www.cdc.gov/healthywater/swimming/images/GettyImages-1315223556-500px.jpg?_=47053" alt="Swimming Picture">
-    <p>Fall 2023 Schedule: </p>
-    <ul>
-        <li>MATH 225</li>
-        <li>ECON 317</li>
-        <li>GEOL 105</li>
-        <li>DSCI 250</li>
-        <li>ITP 104</li>
-    </ul>
+<div id="container">
+    <div id="first">
+        <h1>Alex Palakian</h1>
+        <p><a href="mailto:palakian@usc.edu">palakian@usc.edu</a></p>
+    </div>
     <hr> 
-    <p>Assignments: </p>
-    <ul>
-        <li><a href="assignment_01/resume.html">Assignment 1: Resume</a></li>
-        <li><a href="assignment_02/interests.html">Assignment 2: Interests Page</a></li>
-    </ul>
-    <p>Labs: </p>
-    <ul>
-        <li>Lab 1: Text Editor, GitHub</li>
-        <li><a href="file:///C:/Users/palak/OneDrive/Documents/itp104-submissions-alexpalakian/index.html">Lab 2: Student Page</a></li>
-        <li><a href="lab_03/assignment_01/resume.html">Lab 3: Updated Resume</a></li>
-    </ul>
+    <div id="second">
+        <div class="column1">
+            <p>Favorite color: <em>Lime Green</em></p>
+            <p>Favorite website: <a href="https://www.amazon.com/">Amazon</a></p>
+            <p>Favorite activity: </p>
+            <img src="https://www.cdc.gov/healthywater/swimming/images/GettyImages-1315223556-500px.jpg?_=47053" alt="Swimming Picture">
+        </div>
+        <div class="column2">
+            <p>Fall 2023 Schedule: </p>
+            <ul>
+                <li>MATH 225: Linear Algebra and Linear Differential Equations</li>
+                <li>ECON 317: Introduction to Statistics for Economists</li>
+                <li>GEOL 105: Planet Earth</li>
+                <li>DSCI 250: Introduction to Data Science</li>
+                <li>ITP 104: Introduction to Web Development</li>
+            </ul>
+        </div>
+    </div>
+    <hr> 
+    <div id="third">
+        <div class="column3">
+            <p>Assignments: </p>
+            <ul>
+                <li><a href="assignment_01/resume.html">Assignment 1: Resume</a></li>
+                <li><a href="assignment_02/interests.html">Assignment 2: Interests Page</a></li>
+            </ul>
+        </div>
+        <div class="column4">
+        <p>Labs: </p>
+            <ul>
+                <li>Lab 1: Text Editor, GitHub</li>
+                <li><a href="index.html">Lab 2: Student Page</a></li>
+                <li><a href="lab_03/assignment_01/resume.html">Lab 3: Updated Resume</a></li>
+                <li><a href="index.html">Lab 4: Updated Student Page</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 </body>
 </html>
