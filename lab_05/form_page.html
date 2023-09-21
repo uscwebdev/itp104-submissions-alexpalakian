@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+	<title>Coffee Order Form</title>
+	<style>
+        #main {
+            width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 10px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-row {
+			margin: 10px 0px;
+            padding: 5px;
+			display: flex;
+		}
+		.left-col {
+			width: 100px;
+		}
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>Coffee Order Form</h1>
+        <form action="confirmation1.html">
+            <div class="form-row">
+                <div class="left-col">
+                    <label for="first_name-id">First Name:</label>
+                </div>
+                <input type="text" id="first_name-id" placeholder="Anna">
+            </div>
+
+            <div class="form-row">
+                <div class="left-col">
+                    <label for="last_name-id">Last Name:</label>
+                </div>
+                <input type="text" id="last_name-id" placeholder="Annenberg">
+            </div>
+
+            <div class="form-row">
+                <div class="left-col">
+                    <label for="email-id">Email:</label>
+                </div>
+                <input type="text" id="email-id" placeholder="aannenberg@usc.edu">
+            </div>
+
+            <div class="form-row">
+                <div class="left-col">
+                    <label for="phone-id">Phone:</label>
+                </div>
+                <input type="text" id="phone-id" placeholder="(123) 123-1234">
+            </div>
+
+            <div class="form-row">
+                <div class="left-col">
+                    Cup Size:
+                </div>
+                    <label>
+                    <input type="radio">
+                    Small
+                    </label>
+                    <label>
+                    <input type="radio">
+                    Medium 
+                    </label>
+                    <label>
+                    <input type="radio">
+                    Large 
+                    </label>
+            </div>
+
+            <div class="form-row">
+                <div class="left-col">
+                    <label for="order-id">Drink Type:</label>
+                </div>
+                <select id="order-id">
+                    <option>Espresso</option>
+                    <option>Cold Brew</option>
+                    <option>Latte</option>
+                    <option>Macchiato</option>
+                    <option>Cappuccino</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <div class="left-col">
+                    Milk Type:
+                </div>
+                    <label>
+                    <input type="checkbox">
+                     2% Milk
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    Soy Milk
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    Almond Milk
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    Oat Milk
+                    </label>
+            </div>
+
+            <div class="form-row">
+                <div class="left-col">
+                    Flavoring:
+                </div>
+                    <label>
+                    <input type="checkbox">
+                    Vanilla
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    Caramel
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    Hazelnut
+                    </label>
+                    <label>
+                    <input type="checkbox">
+                    None
+                    </label>
+            </div>
+
+            <div class="form-row">
+                <div class="left-col">
+                    <label for="msg-id">Comments:</label>
+                </div>
+                <textarea id="msg-id" placeholder="Light Ice..."></textarea>
+            </div>
+
+            <div class="form-row">
+                <div class="left-col">
+                </div>
+                <label>
+                    <input type="checkbox">
+                    I accept terms & conditions.
+                </label>
+            </div>
+    
+            <div class="form-row">
+                <div class="left-col">
+                </div>
+                <button type="submit">Submit Order</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
