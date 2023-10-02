@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photo Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+	<style>
+        #header {
+			background-image: url("img/burrito_9.jpg");
+            height: 250px;
+            line-height: 250px;
+        }
+        #main {
+            flex-wrap: wrap;
+            background-color: white;
+        }
+        #navbar a { 
+			text-decoration: none;
+			color: white;
+			width: 550px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			display: block;
+		}
+		#navbar {
+			display: flex;
+			justify-content: center;
+            background-color: #8b2300;
+		}
+		#navbar a:hover {
+            background-color: #c83503;
+		}
+        #row-containter1 {
+            display: flex;
+            justify-content: center;
+
+        }
+        #column-containter2 {
+            display: flex;
+            flex-direction: row;
+        }
+        #column-containter3 {
+            display: flex;
+            flex-direction: column;
+        }
+        #row-containter4 {
+            display: flex;
+            justify-content: center;
+        }
+        #row-containter5 {
+            display: flex;
+            justify-content: center;
+        }
+        #one {
+            width: 326px;
+            height: 300px;
+            margin: 30px 15px 15px 30px;
+        }
+        #two {
+            width: 326px;
+            height: 300px;
+            margin: 30px 15px 15px 15px;
+        }
+        #three {
+            width: 326px;
+            height: 300px;
+            margin: 30px 30px 15px 15px;
+        }
+        #four {
+            width: 505px;
+            height: 600px;
+            margin: 15px 15px 15px 30px;
+        }
+        #five {
+            width: 505px;
+            height: 285px;
+            margin: 15px 30px 15px 15px;
+        }
+        #six {
+            width: 505px;
+            height: 285px;
+            margin: 15px 30px 15px 15px;
+        }
+        #seven {
+            width: 326px;
+            height: 300px;
+            margin: 15px 15px 15px 30px;
+        }
+        #eight {
+            width: 326px;
+            height: 300px;
+            margin: 15px 15px 15px 15px;
+        }
+        #nine {
+            width: 326px;
+            height: 300px;
+            margin: 15px 30px 15px 15px;
+        }
+        #ten {
+            width: 505px;
+            height: 300px;
+            margin: 15px 15px 30px 30px;
+        }
+        #eleven {
+            width: 505px;
+            height: 300px;
+            margin: 15px 30px 30px 15px;
+        }
+        .image {
+            background-color: lightgray;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+		<h1 id="gallery-section">Gallery</h1>
+	</div>
+
+    <div id="navbar">
+		<a href="interests.html#home-section">Home</a>
+		<a href="gallery.html#gallery-section">Gallery</a>
+	</div>
+
+    <div id="main">
+        <div id="row-containter1">
+            <div id="one" class="image"></div>
+            <div id="two" class="image"></div>
+            <div id="three" class="image"></div>
+        </div>
+        <div id="column-containter2">
+            <div id="four" class="image"></div>
+            <div id="column-containter3">
+                <div id="five" class="image"></div>
+                <div id="six" class="image"></div>
+            </div>
+        </div>
+        <div id="row-containter4">
+            <div id="seven" class="image"></div>
+            <div id="eight" class="image"></div>
+            <div id="nine" class="image"></div>
+        </div>
+        <div id="row-containter5">
+            <div id="ten" class="image"></div>
+            <div id="eleven" class="image"></div>
+        </div>
+
+    </div>
+
+
+
+    <div id="footer">
+		All rights reserved to Alex Palakian
+	</div>
+</body>
+</html>

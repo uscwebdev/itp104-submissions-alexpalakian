@@ -2,27 +2,13 @@
 <html>
 <head>
 	<title>Burritos</title>
+    <link rel="stylesheet" href="style.css">
+
 	<style>
-        body {
-            background-color:rgb(255, 246, 168);
-        }
         #header {
-			width: 100%;
-			text-align: center;
 			background-image: url("img/burrito_1.png");
-			background-size: cover;
-			background-position: center;
-			color: #FFF;
-			text-shadow: 0px 0px 20px black;
-            font-size: 3em;
-            padding: 100px;
-        }
-        #main {
-            display: flex;
-            justify-content: center;
-            width: 1100px;
-            margin-left: auto;
-			margin-right: auto;
+            height: 400px;
+            line-height: 400px;
         }
         #Traditional {
             float: right;
@@ -47,19 +33,10 @@
 			margin-right: auto;
             padding: 15px;
         }
-        #footer {
-            background-color: #8b2300;
-			text-align: center;
-			color: #FFF;
-            width: 100%;
-			height: 50px;
-			line-height: 50px;
-        }
         #content {
             width: 840px;
             background-color: white;
             padding: 20px;
-
         }
         #sidebar {
             width: 200px;
@@ -74,17 +51,35 @@
             margin-left: auto;
             
         }
-        .extra {
+        #extra {
             width: 190px;
             height: auto;
             margin: 5px;
             text-align: center;
         }
+        .img-container p {
+			text-align: center;
+			visibility: hidden;
+		}
+        .thumbnail {
+			opacity: 0.7;
+		}
+        .thumbnail:hover {
+			opacity: 1.0;
+		}
+        .thumbnail:hover + p {
+			visibility: visible;
+		}
     </style>
 </head>
 <body>
     <div id="header">
-		<h1>Burrito Bonanza</h1>
+		<h1 id="home-section">Burrito Bonanza</h1>
+	</div>
+
+    <div id="navbar">
+		<a href="interests.html#home-section">Home</a>
+		<a href="gallery.html#gallery-section">Gallery</a>
 	</div>
 
     <div id="main">
@@ -126,18 +121,23 @@
         </div>
         <div id="sidebar">
             <h2>Other Burrito Varieties</h2>
-            <div id="pictures"></div>
-                <img class="extra" src="img/burrito_5.webp" alt="California Burrito">
-                <p class="extra"><em>California Burrito: a traditional burrito with fries inside</em></p>
-
-                <img class="extra" src="img/burrito_6.jpg" alt="Chimichanga">
-                <p class="extra"><em>Chimichanga: a deep-fried traditional burrito common in "Tex-Mex" cuisine</em></p>
-
-                <img class="extra" src="img/burrito_7.jpg" alt="Korean Bulgogi Burrito">
-                <p class="extra"><em>Korean Bulgogi Burrito: bulgogi is a popular Korean dish made from thinly sliced marinated beef or pork, and put inside a burrito</em></p>
-                
-                <img class="extra" src="img/burrito_8.jpg" alt="Tikka Masala Burrito">
-                <p class="extra"><em>Tikka Masala Burrito: tikka masala is an Indian dish that has been modernized into a burrito</em></p>
+            <div id="pictures">
+                <div class = "img-container">
+                    <img id="extra" class="thumbnail" src="img/burrito_5.webp" alt="California Burrito">
+                    <p><em>California Burrito: a traditional burrito with fries inside</em></p>
+                </div>
+                <div class = "img-container">
+                    <img id="extra" class="thumbnail" src="img/burrito_6.jpg" alt="Chimichanga">
+                    <p><em>Chimichanga: a deep-fried traditional burrito common in "Tex-Mex" cuisine</em></p>
+                </div>
+                <div class = "img-container">
+                    <img id="extra" class="thumbnail" src="img/burrito_7.jpg" alt="Korean Bulgogi Burrito">
+                    <p><em>Korean Bulgogi Burrito: bulgogi is a popular Korean dish made from thinly sliced marinated beef or pork, and put inside a burrito</em></p>
+                </div>
+                <div class = "img-container">
+                    <img id="extra" class="thumbnail" src="img/burrito_8.jpg" alt="Tikka Masala Burrito">
+                    <p><em>Tikka Masala Burrito: tikka masala is an Indian dish that has been modernized into a burrito</em></p>
+                </div>
             </div>
         </div>
     </div>
