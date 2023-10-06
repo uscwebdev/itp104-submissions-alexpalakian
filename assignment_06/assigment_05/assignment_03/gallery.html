@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photo Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@12..96&family=Dancing+Script&family=Quicksand&family=Roboto&display=swap" rel="stylesheet">
+	
+    <style>
+        #header {
+			background-image: url("img/burrito_9.jpg");
+            height: 250px;
+            line-height: 250px;
+        }
+        #main {
+            flex-wrap: wrap;
+            background-color: white;
+        }
+        .overlay {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			background-color: rgba(0, 0, 0, 0.6);
+			color: white;
+			text-align: center;
+			padding-top: 100px;
+			visibility: hidden;
+        }
+        #row-container1 {
+            width: 326px;
+            height: 300px;
+            margin: 15px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid black;
+        }
+        #row-container1:hover > .overlay {
+			visibility: visible;
+		}
+        #row-container1 > img {
+			height: 100%;
+			width: 100%;
+		}
+        #column-container2 {
+            width: 505px;
+            height: 600px;
+            margin: 15px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid black;
+        }
+        #column-container2:hover > .overlay {
+			visibility: visible;
+		}
+        #column-container2 > img {
+			height: 100%;
+			width: 100%;
+		}
+        #ultimate-container {
+            flex-direction: column;
+        }
+        #column-container3 {
+            width: 505px;
+            height: 285px;
+            margin: 15px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid black;
+        }
+        #column-container3:hover > .overlay {
+			visibility: visible;
+		}
+        #column-container3 > img {
+			height: 100%;
+			width: 100%;
+		}
+        #row-container4 {
+            width: 326px;
+            height: 300px;
+            margin: 15px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid black;
+        }
+        #row-container4:hover > .overlay {
+			visibility: visible;
+		}
+        #row-container4 > img {
+			height: 100%;
+			width: 100%;
+        }
+        #row-container5 {
+            width: 505px;
+            height: 300px;
+            margin: 15px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid black;
+        }
+        #row-container5:hover > .overlay {
+			visibility: visible;
+		}
+        #row-container5 > img {
+			height: 100%;
+			width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+		<h1 id="gallery-section">Gallery</h1>
+	</div>
+
+    <div id="navbar">
+
+        <ul id="top-section">
+            <li>
+                <a href="interests.html#home-section">Home</a>
+                <ul id="sub-section">
+                    <li><a href="interests.html#subsection1">Traditional Burrito</a></li>
+                    <li><a href="interests.html#subsection2">Breakfast Burrito</a></li>
+                    <li><a href="interests.html#subsection3">Poke Burrito</a></li>
+                </ul>
+            </li>
+            <li><a href="gallery.html#gallery-section">Gallery</a></li>
+        </ul>
+	</div>
+
+    <div id="main">
+        <div id="row-container1">
+            <img src="img/step1.jpg" alt="Step 1">
+            <div class="overlay">Step 1: Prepare your meat of choice</div>
+        </div>
+        <div id="row-container1">
+            <img src="img/step2.jpg" alt="Step 2">
+            <div class="overlay">Step 2: Add seasoning</div>
+        </div>
+        <div id="row-container1">
+            <img src="img/step3.jpg" alt="Step 3">
+            <div class="overlay">Step 3: Spread refried beans onto a tortilla</div>
+        </div>
+
+        <div id="column-container2">
+            <img src="img/finished_product.jpg" alt="Finished Product">
+            <div class="overlay">Finished Product!</div>
+        </div>
+
+        <div id="ultimate-container">
+            <div id="column-container3">
+                <img src="img/ingredients.jpg" alt="Burrito Recipe">
+                <div class="overlay">Quick Burrito Recipe</div>
+            </div>
+            <div id="column-container3">
+                <img src="img/enjoy.jpg" alt="Person Enjoying the Burrito">
+                <div class="overlay">Enjoy!</div>
+            </div>
+        </div>
+      
+        <div id="row-container4">
+            <img src="img/step4.jpg" alt="Step 4">
+            <div class="overlay">Step 4: Add rice inside the burrito</div>
+        </div>
+        <div id="row-container4">
+            <img src="img/step5.jpg" alt="Step 5">
+            <div class="overlay">Step 5: Add toppings of your choice (cheese, pico, guac...)</div>
+        </div>
+        <div id="row-container4">
+            <img src="img/step6.jpg" alt="Step 6">
+            <div class="overlay">Step 6: Begin folding the sides of the burrito</div>
+        </div>
+
+        <div id="row-container5">
+            <img src="img/step7.jpg" alt="Step 7">
+            <div class="overlay">Step 7: Tightly roll the burrito</div>
+        </div>
+        <div id="row-container5">
+            <img src="img/step9.jpg" alt="Step 8">
+            <div class="overlay">Step 8: Place burritos in a container to bake</div>
+        </div>
+    </div>
+
+    <div id="footer">
+		All rights reserved to Alex Palakian
+	</div>
+</body>
+</html>

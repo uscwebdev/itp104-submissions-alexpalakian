@@ -1,0 +1,79 @@
+@font-face {
+    src: url('fonts/Neue.otf');
+    font-family: "Neue";
+}
+body {
+    background-color:rgb(255, 246, 168);
+}
+#header {
+    text-align: center;
+    background-size: cover;
+	background-position: center;
+    color: #FFF;
+	text-shadow: 0px 0px 20px black;
+    font-size: 3em;
+    font-family: 'Neue', headline;
+    letter-spacing: 10px;
+}
+#footer {
+    background-color: #8b2300;
+    text-align: center;
+    color: #FFF;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-family: 'Roboto', neo-grotesque;
+}
+#main {
+    display: flex;
+    justify-content: center;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', neo-grotesque;
+}
+#navbar ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+#navbar li {
+    background-color: #8b2300;
+    width: 550px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+#top-section {
+    display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+#navbar li:hover {
+    background-color: #cb3a09;
+}
+#navbar a { 
+    text-decoration: none;
+    display: block;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+}
+#top-section ul {
+    position: absolute;
+    display: none;
+}
+#navbar li:hover > ul {
+    display: block;
+}
+#navbar {
+    position: fixed;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    font-family: 'Roboto', neo-grotesque;
+}
