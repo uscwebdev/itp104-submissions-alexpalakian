@@ -2,7 +2,17 @@
 <html>
 <head> 
     <title>Alex Palakian | Student Page</title>
+
+    <meta charset="utf-8">
+	<meta name="keywords" content="Student Page, ITP 104">
+	<meta name="description" content="ITP 104 Student Page">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
     <style>
+        body {
+            padding: 10px;
+            font-family: "Arial", sans-serif;
+        }
         em {
             background-color: limegreen
         }
@@ -21,7 +31,6 @@
         }
         .column1 {
             justify-content: left;
-            /* margin-right: 30px; */
         }
         .column2 {
             justify-content: right;
@@ -34,12 +43,38 @@
         }
         .column3 {
             justify-content: left;
-            /* margin-right: 30px; */
         }
         .column4 {
             justify-content: right;
             margin-left: 145px;
             margin-right: 50px
+        }
+		/* mobile: screen sizes = 767px */
+		@media (max-width: 767px) {
+            #container, #first {
+                width: auto;
+            }
+            #second, #third {
+                /* display: flex; */
+                flex-direction: column;
+                width: auto;
+            }
+            .column1, .column2, .column3, .column4 {
+                width: auto;
+                padding: 0px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            p, h1 {
+                text-align: center;
+            }
+            img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            hr {
+                width: 90%;
+            }
         }
     </style>
 </head>
@@ -55,7 +90,9 @@
             <p>Favorite color: <em>Lime Green</em></p>
             <p>Favorite website: <a href="https://www.amazon.com/">Amazon</a></p>
             <p>Favorite activity: </p>
-            <img src="https://www.cdc.gov/healthywater/swimming/images/GettyImages-1315223556-500px.jpg?_=47053" alt="Swimming Picture">
+            <p>
+                <img src="https://www.cdc.gov/healthywater/swimming/images/GettyImages-1315223556-500px.jpg?_=47053" alt="Swimming Picture">
+            </p>
         </div>
         <div class="column2">
             <p>Fall 2023 Schedule: </p>
@@ -91,6 +128,7 @@
                 <li><a href="lab_05/form_page.html">Lab 5: Form Page</a></li>
                 <li><a href="lab_06/photogallery.html">Lab 6: Simple Photo Gallery</a></li>
                 <li><a href="lab_07/puzzle.html">Lab 7: Image Puzzle</a></li>
+                <li><a href="index.html">Lab 8: Responsive Student Page</a></li>
             </ul>
         </div>
     </div>
