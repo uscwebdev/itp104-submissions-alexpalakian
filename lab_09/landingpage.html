@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Landing Page | Gua Sha</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<style>
+        body {
+			font-family: 'Inconsolata', cursive;
+            margin-top: 15px;
+            margin-bottom: 15px;
+		}
+        #header {
+            width: auto;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            top: 0px;
+            background-color: rgb(255, 235, 238);
+        }
+        #container {
+            margin: auto;
+            text-align: center;
+            width: 1200px;
+        }
+        #material, #shapes {
+			display: flex;
+            margin: 10px;
+		}
+		.img-container {
+			margin: 10px;
+			width: 500px;
+			height: 240px;
+			overflow: hidden; 
+			position: relative;
+		}
+		.overlay {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			background-color: rgba(153, 148, 153, 0.621);
+			color: white;
+			text-align: center;
+			padding-top: 100px;
+			visibility: hidden;
+		}
+		.img-container:hover > .overlay {
+			visibility: visible;
+		}
+		.img-container > img {
+			height: 100%;
+			width: 100%;
+		}
+		iframe {
+			width: 800px;
+			height: 500px;
+			border: none;
+		}
+        #footer {
+            text-align: center;
+            background-color: rgb(255, 235, 238);
+            width: 100%;
+            margin-top: 10px;
+            padding: 5px;
+        }
+	</style>
+</head>
+<body>
+    <div id="header">
+        <h1>GUA SHA</h1>
+        <p>Rejuvenate your skin and revitalize your soul with our premium Gua Sha tool!</p>
+    </div>
+
+    <div id="container">
+        <h3>THE BASICS</h3>
+        <p>Gua Sha, an ancient Chinese healing technique, involves gently scraping the skin's surface with a smooth-edged tool to promote circulation and release tension. This therapy is used to improve the body's natural flow of energy, helping alleviate pain, reduce inflammation, and enhance overall well-being. Its origins date back thousands of years, making it a time-tested and effective method for rejuvenation and healing</p>
+        <hr>
+
+        <h3>GUA SHA MATERIALS</h3>
+        <div id="material">
+            <div class="img-container">
+                <img src="img/lab9.1.jpg" alt="Jade">
+                <div class="overlay">JADE: promotes peace and calmness, reduces inflamation, and reduces redness</div>
+            </div>
+
+            <div class="img-container">
+                <img src="img/lab9.2.jpg" alt="Rose Quartz">
+                <div class="overlay">ROSE QUARTZ: increases blood flow and produces more collagen</div>
+            </div>
+
+            <div class="img-container">
+                <img src="img/lab9.3.jpg" alt="Black Obsidian">
+                <div class="overlay">OBSIDIAN: reduces puffiness and promotes lymphatic drainage</div>
+            </div>
+        </div>
+        <hr>
+
+        <h3>GUA SHA SHAPES</h3>
+        <div id="shapes">
+            <div class="img-container">
+                <img src="img/lab9.4.jpg" alt="Heart Shaped Tool">
+                <div class="overlay">HEART SHAPED</div>
+            </div>
+            <div class="img-container">
+                <img src="img/lab9.5.jpg" alt="Wave Shaped Tool">
+                <div class="overlay">WAVE SHAPED</div>
+            </div>
+
+            <div class="img-container">
+                <img src="img/lab9.6.jpg" alt="Wand Shaped Tool">
+                <div class="overlay">WAND SHAPED</div>
+            </div>
+            <div class="img-container">
+                <img src="img/lab9.7.jpg" alt="Teardrop Shaped Tool">
+                <div class="overlay">TEARDROP SHAPED</div>
+            </div>
+        </div>
+        <hr>
+
+        <h3>PREPARING FOR GUA SHA USE</h3>
+        <p>Once you choose the perfect shape and material for you and start using your gua sha tool every day or at least two to three times a week, you'll learn to be a pro and start to experience the many amazing benefits.
+            One final piece of advice is to never ever perform Gua Sha on bare skin. This is to prevent any rashes or irritation on your skin when doing a Gua Sha massage.</p>
+        <p>It is recommened to use facial oils that give your skin a bit of slip, helping the gua sha tool glide smoothly and improve the glow of your skin!</p>
+        <hr>
+
+        <h3>GUIDE TO USING A GUA SHA</h3>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/6aw-fJF59Q4?si=selVsnNFDa2I-H4z" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    <div id="footer">
+        <p>Now it's time to experience the secret to natural beauty and relaxation! Happy Gua Sha-ing!</p>
+    </div>
+
+</body>
+</html>
