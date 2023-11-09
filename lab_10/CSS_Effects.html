@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Effect | Thanksgiving Foods</title>
+	<style>
+         #header {
+            width: auto;
+            height: 200px;
+            margin: auto;
+            text-align: center;
+            background-image: url(img/banner.webp);
+            background-size: cover;
+			background-position: center;
+            padding: 10px;
+            font-size: 2em;
+        }
+        .container {
+            width: auto;
+            height: 420px;
+            margin-top: 40px;
+            margin-right: auto;
+            margin-left: auto;
+		}
+        #turkey {
+            width: 450px;
+            height: 225px;
+            position: absolute;
+            top: 350px;
+            left: 500px;
+        }
+        #mash {
+            width: 290px;
+            height: 225px;
+            position: absolute;
+            top: 350px;
+            left: 600px;
+        }
+        #beans {
+            width: 275px;
+            height: 225px;
+            position: absolute;
+            top: 350px;
+            left: 700px;
+        }
+        .translate {
+            transition: all 1s;
+        }
+        .container:hover > #turkey  {
+            transform: translateX(-360px) scale(1.25);
+        }
+        .container:hover > #mash  {
+            transform: translateX(105px) scale(1.25);
+        }
+        .container:hover > #beans  {
+            transform: translateX(380px) scale(1.25); 
+        }
+
+	</style>
+</head>
+<body>
+    <div id="header">
+        <h1>Thanksgiving Foods</h1>
+    </div>
+	<div class="container">
+        <img src="img/effect1.jpg" alt="turkey" class="translate" id="turkey">
+        <img src="img/effect2.jpg" alt="mash" class="translate" id="mash">
+        <img src="img/effect3.jpg" alt="beans" class="translate" id="beans">
+	</div> 
+</body>
+</html>
