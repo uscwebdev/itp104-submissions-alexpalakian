@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Hi, I'm Alex: an economics and data science student at the University of Southern California, 
+    a programming enthusiast, and a creative. Welcome to my personal portfolio!">
+    <meta name="keyword" content="HTML, Personal Portfolio, ITP 104, Final Project, Alex, Palakian, USC">
+	<title>Personal Website | Alex Palakian</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@12..96&family=Dancing+Script&family=Oswald&family=Quicksand&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+	<style>
+        body {
+            background-color: #00A45B;
+            margin: 0;
+            padding: 0;
+        }
+        #navbar a { 
+			text-decoration: none;
+			color: #1C1C1F;
+			width: 80px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			display: block;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.5em;
+		}
+		#navbar {
+			display: flex;
+            background-color: #00A45B;
+			justify-content: center;
+            padding-right: 50px;
+            padding-left: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            top: 0px;
+			right: 0px;
+			left: 0px;
+			z-index: 1;
+            position: fixed;
+            border-bottom: 1px solid #1C1C1F;
+		}
+        #navbar #home {
+            margin-right: auto;
+            width: 150px;
+        }
+		#navbar a:hover {
+            font-style: italic;
+		}
+        .img-content {
+            width: 100%;
+            height: 800px;
+            position: fixed;
+            background-color: #00A45B;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .images {
+            width: 600px;
+            height: 485px;
+            border-radius: 15px;
+            border: 1px solid #1C1C1F;
+        }
+        .text-content {
+            width: 100%;
+            top: 800px;
+            position: relative;
+            background-color: #00A45B;
+            border-top: 1px solid #1C1C1F;
+        }
+        #container {
+            font-family: 'Playfair Display', serif;
+            color: #1C1C1F;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1100px;
+            margin-bottom: 90px;
+        }
+        .name {
+            font-family: 'Oswald', sans-serif;
+            text-align: center;
+            font-weight: 100;
+            font-size: 11em;
+            line-height: 0.75;
+            padding: 0;
+        }
+        em {
+            font-size: 1.25em;
+        }
+        .description {
+            text-align: center;
+            font-weight: 100;
+            font-size: 4em;
+        }
+        #media {
+            background-color: #00A45B;
+            display: flex;
+            justify-content: center;
+            width: auto;
+            position: relative;
+            padding-bottom: 0px;
+        }
+        .social {
+            color:#1C1C1F;
+            width: 70px;
+            height: 70px;
+            background-color: #00A45B;
+            position: relative;
+            top: 20px;
+        }
+        .social_gram {
+            color:#1C1C1F;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            top: 30px;
+            background-color: #00A45B;
+        }
+        #footer {
+            background-color: #00A45B;
+            color: #1C1C1F;
+            text-align: center;
+            height: 170px;
+            line-height: 170px;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5em;
+        }
+        #footer h2 {
+            display: block;
+            margin: 0px;
+            font-weight: 100;
+            line-height: 1.5;
+        }
+        #footer h3 {
+            display: block;
+            margin: 0px;
+            font-weight: 100;
+            line-height: 1.5;
+        }
+        #footer p {
+            display: block;
+            margin: 0px;
+            font-weight: 100;
+            line-height: 4;
+            font-size: 0.65em;
+        }
+        #footer a {
+            text-decoration: none;
+            color: #1C1C1F;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a id="home" href="homepage.html">ALEX PALAKIAN</a>
+        <a class="about" href="aboutpage.html">ABOUT</a>
+        <a class="design" href="designpage.html">DESIGN</a>
+        <a class="code" href="codepage.html">CODE</a>
+        <a class="contact" href="contactpage.html">CONTACT</a>
+    </div>
+
+    <div class="img-content">
+        <img class="images" src="img/home1.jpg" alt="Profile Pic">
+        <img class="images" src="img/home2.jpg" alt="EA Pic">
+        <img class="images" src="img/home3.JPG" alt="Taylor Pic">
+        <img class="images" src="img/home4.jpg" alt="ESA Pic">
+        <img class="images" src="img/home5.jpg" alt="USC Pic">
+    </div>
+    <div class="text-content">
+        <div id="container">
+            <h1 class="name">Hi, I'm Alex</h1>
+            <h2 class="description">I'm a <em>data-driven analyst</em>, <em>problem-solver</em>, <em>sustainable-thinker</em>, <em>technology-enthusiast</em>, <em>innovator</em>, <em>visual artist</em>, 
+                <em>coffee-lover</em>, and <em>Trader Joe's fanatic</em></h2>
+            <h2 class="description">Oh, I'm also an economics and data science student at the University of Southern California ✌</h2>
+        </div>
+        <script>
+            var slideIndex = 0;
+            carousel();
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("images");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {
+                    slideIndex = 1;
+                }
+                x[slideIndex - 1].style.display = "block";
+                setTimeout(carousel, 1250);
+            }
+        </script>
+        <div id="footer">
+            <h2>Thanks for visiting! Let's get in touch 👋</h2>
+            <h3>
+                <a href="https://www.linkedin.com/in/alexpalakian/" target="_blank">LinkedIn</a>
+                |
+                <a href="https://www.instagram.com/alexpalakian/" target="_blank">Instagram</a>
+                |
+                <a href="mailto:palakian@usc.edu" target="_blank">Email</a>
+            </h3>
+            <p><em>Coded with love (and coffee) by Alex Palakian</em></p>
+        </div>
+    </div>
+</body>
+</html>
