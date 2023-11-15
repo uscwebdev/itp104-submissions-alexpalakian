@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Puzzle | Taylor Swift</title>
+	<style>
+        #header {
+            height: 100px;
+            text-align: center;
+            font-family: "Arial", sans-serif; 
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
+            width: 600px;
+        }
+        #one{
+            width: 200px;
+            height: 300px;
+        }
+        #two{
+            position: relative;
+            bottom: 20px;
+            left: 5px;
+        }
+        #three{
+            width: 200px;
+            height: 300px;
+        }
+        #four{
+            position: relative;
+            bottom: 40px;
+            right: 5px;
+        }
+        #five{
+            width: 200px;
+            height: 300px;
+        }
+        #six{
+            position: relative;
+            bottom: 5px;
+            left: 50px;
+        }
+        #seven{
+            position: relative;
+            top: 15px;
+            right: 15px;
+        }
+        #eight{
+            position: relative;
+            bottom: 25px;
+            left: 20px;
+        }
+        #nine{
+            width: 200px;
+            height: 300px;
+        }
+        .image-style {
+            width: 200px;
+            height: 300px;
+            box-shadow: 0px 0px 20px white;
+        }
+        .image {
+            width: 200px;
+            height: 300px;
+        }
+	</style>
+</head>
+<body>
+    <div id="header">
+        <h1>Taylor Swift: My Hero</h1>
+    </div>
+	<div id="image-grid">
+        <img id="one" class="image" src="img/row-1-column-1.jpg" alt="Tyalor Top Left">
+        <img id="two" class="image" class="image-style" src="img/row-1-column-2.jpg" alt="Taylor Top Middle">
+        <img id="three" class="image" src="img/row-1-column-3.jpg" alt="Taylor Top Right">
+        <img id="four" class="image" class="image-style" src="img/row-2-column-1.jpg" alt="Taylor Middle Left">
+        <img id="five" class="image" src="img/row-2-column-2.jpg" alt="Taylor Middle Middle">
+        <img id="six" class="image" class="image-style" src="img/row-2-column-3.jpg" alt="Taylor Middle Right">
+        <img id="seven" class="image" class="image-style" src="img/row-3-column-1.jpg" alt="Taylor Bottom Left">
+        <img id="eight" class="image" class="image-style" src="img/row-3-column-2.jpg" alt="Taylor Bottom Middle">
+        <img id="nine" class="image" src="img/row-3-column-3.jpg" alt="Taylor Bottom Right">
+    </div>
+    <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
+    
+    <!-- I used vanilla JavaScript plugin (hope I did this correct) -->
+    <script>
+        var elem = document.querySelector('.image');
+        var draggie = new Draggabilly( elem, {
+        });
+        var draggie = new Draggabilly( '.image', {
+        });
+        var draggableElems = document.querySelectorAll('.image');
+        var draggies = []
+        for ( var i=0; i < draggableElems.length; i++ ) {
+        var draggableElem = draggableElems[i];
+        var draggie = new Draggabilly( draggableElem, {
+        });
+        draggies.push( draggie );
+        }
+    </script>
+</body>
+</html>
