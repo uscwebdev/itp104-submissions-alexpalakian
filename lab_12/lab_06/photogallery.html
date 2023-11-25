@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Photo Gallery | Trinidad Trip</title>
+	<style>
+        #header {
+            background-image: url('img/trin8.jpg');
+            background-size: cover;
+            background-position: left;
+            color: white;
+            text-shadow: 0px 0px 10px #000;
+            font-size: 1.5em;
+            text-align: center;
+            height: 300px;
+            line-height: 300px;
+        }
+        #main {
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+        }
+        #left-col {
+            width: 600px;
+            margin: 50px 0px 0px 0px;
+            justify-content: center;
+        }
+        #right-col {
+            width: 600px;
+            margin: 50px 0px 0px 0px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .measure {
+            align-items: baseline;
+        }
+		#gallery {
+			display: flex;
+			align-items: flex-start;
+		}
+		.thumbnail {
+			opacity: 0.7;
+		}
+        #view {
+            width: 600px;
+            height: auto;
+        }
+        #beachhouse {
+            margin: 0px 0px 0px 10px;
+            width: 200px;
+            height: auto;
+        }
+        #blanch {
+            margin: 0px 0px 0px 10px;
+            width: 200px;
+            height: auto;
+        }
+        #friends {
+            margin: 0px 0px 0px 10px;
+            width: 200px;
+            height: auto;
+        }
+        #blanchtwo {
+            margin: 0px 0px 0px 10px;
+            width: 200px;
+            height: auto;
+        }
+		.thumbnail:hover {
+			opacity: 1.0;
+		}
+		.img-container p {
+			text-align: center;
+			visibility: hidden;
+            width: 200px;
+            height: auto;
+		}
+        .img-container1 p {
+            text-align: center;
+			visibility: hidden;
+            width: 600px;
+            height: auto;
+        }
+		.thumbnail:hover + p {
+			visibility: visible;
+		}
+        #one {
+            margin: 10px;
+        }
+	</style>
+</head>
+<body>
+    <div id="header">
+		<h1>Summer 2023 | Trinidad & Tobago</h1>
+	</div>
+
+    <div id="main">
+        <div id="left-col">
+            <div class = "img-container1">
+                <img id="view" class="thumbnail" src="img/trin1.jpg" alt="Maracas Lookout Point">
+                <p>Maracas Lookout Point. We past along this lookout point as we drove back from the beach at sunset.</p>
+            </div>
+        </div>
+        <div id="right-col" class="measure">
+            <div id="one">
+                <div class = "img-container">
+                    <img id="beachhouse" class="thumbnail" src="img/trin3.HEIC" alt="Amy's Blanchisseuse Beach House">
+                    <p>Amy's Blanchisseuse Beach House. We stayed at our friend's yellow beach house which had pool looking out to a private beach.</p>
+                </div>
+            </div>
+            <div id="one">
+                <div class = "img-container">
+                    <img id="blanch" class="thumbnail" src="img/trin6.jpg" alt="Blanchisseue">
+                    <p>Blanchisseue. This is a private beach along the north coast of Trinidad; it was very secluded and the water was warm.</p>
+                </div>
+            </div>
+            <div id="one">
+                <div class = "img-container">
+                    <img id="blanchtwo" class="thumbnail" src="img/trin4.JPG" alt="Blanchisseue Beach">
+                    <p>Blanchisseue Beach. Another picture of my favorite beach on Trinidad; lots of lush greenery surrounding the beach.</p>
+                </div>
+            </div>
+            <div id="one">
+                <div class = "img-container">
+                    <img id="friends" class="thumbnail" src="img/trin5.jpg" alt="Me and my friends!">
+                    <p>Me and my friends! This picture was taken on a boat as we drove down the islands to our friend's island house; it was a perfect day!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('#view').click(function () {
+            $('.thumbnail').css('border', 'none')
+            $('#view').css('border', '2px solid purple')
+        })
+        $('#beachhouse').click(function () {
+            $('.thumbnail').css('border', 'none')
+            $('#beachhouse').css('border', '2px solid purple')
+        })
+        $('#blanch').click(function () {
+            $('.thumbnail').css('border', 'none')
+            $('#blanch').css('border', '2px solid purple')
+        })
+        $('#blanchtwo').click(function () {
+            $('.thumbnail').css('border', 'none')
+            $('#blanchtwo').css('border', '2px solid purple')
+        })
+        $('#friends').click(function () {
+            $('.thumbnail').css('border', 'none')
+            $('#friends').css('border', '2px solid purple')
+        })
+    </script>
+</body>
+</html>
