@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Embark on a visual journey through my design portfolio. Discover the fusion of creativity 
+    and design, where every project tells a unique story. Explore a world of aesthetics and innovation!">
+    <meta name="keyword" content="HTML, Personal Portfolio, ITP 104, Final Project, Alex, Palakian, USC">
+	<title>Personal Website (design page) | Alex Palakian</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@12..96&family=Dancing+Script&family=Oswald&family=Quicksand&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+	<style>
+        #design-info {
+            position: relative;
+            top: 100px;
+            text-align: center;
+            width: 1050px;
+            margin-right: auto;
+            margin-left: auto;
+            font-family: 'Payfair Display', serif;
+        }
+        h1 {
+            font-style: italic;
+            font-size: 5em;
+            color: #00A45B;
+            -webkit-text-stroke-width: 1.25px;
+            -webkit-text-stroke-color: #1C1C1F;
+            line-height: 1px;
+        }
+        h3 {
+            font-size: 2em;
+            font-weight: 100;
+            width: 45%;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        #container-text {
+            display: flex;
+            justify-content: space-around; 
+            flex-wrap: wrap; 
+        }
+        .project {
+            position: relative;
+            top: 100px;
+            width: 1000px;
+            height: 380px;
+            padding: 10px;
+            background-color: rgb(228, 233, 225);
+            border-radius: 30px;
+            border: 1px solid #1C1C1F;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 30px;
+            margin-bottom: 60px;
+            transition: transform 0.3s ease;
+        }
+        .project:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+            border: 2px solid #1C1C1F;
+        }
+        .project-imgage {
+            width: 400px;
+            float: left;
+        }
+        .project-imgage img {
+            height: 200px;
+            margin: 20px;
+        }
+        #usg-logo {
+            margin-top: 75px;
+        }
+        #earth-logo {
+            margin-top: 10px;
+            margin-left: 75px;
+            height: 360px;
+            width: 360px;
+        }
+        .project-title {
+            position: absolute;
+            top: 50px;
+            left: 550px;
+            line-height: 1.25;
+        }
+        .project a {
+            color:#1C1C1F;
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: 1.5px;
+            font-weight: 100;
+        }
+        .project h2 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        .project p {
+            font-size: 1.25em;
+            margin-top: 0px;
+        }
+        #footer {
+            position: relative;
+            top: 125px;
+            height: auto;
+            padding-bottom: 20px;
+       }
+       #foot-design {
+            display: block;
+            margin: 0px;
+            font-weight: 100;
+            line-height: 1.5;
+            font-size: 1.25em;
+        }
+      
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a id="home" href="homepage.html">ALEX PALAKIAN</a>
+        <a class="about" href="aboutpage.html">ABOUT</a>
+        <a class="design" href="designpage.html">DESIGN</a>
+        <a class="code" href="codepage.html">CODE</a>
+        <a class="contact" href="contactpage.html">CONTACT</a>
+    </div>
+
+    <div id="design-info">
+        <h1>The Designer In Me!</h1>
+        <div id="container-text">
+            <h3>👨‍🎨 I'm a creative at heart. Through various internships and leadership roles, I've had the opportunity to incorporate my design skills in the digital space via promotional content.</h3>
+            <h3>✨ I believe visual communication is essential in conveying information and marketing a product effectively. Below are two occasions where I've explored diverse forms of communication</h3>
+        </div>
+    </div>
+
+    <div id="comms" class="project">
+        <a href="design-one.html">
+            <div class="project-imgage">
+                <img id="usg-logo" src="img/usg-logo.png" alt="usg-logo">
+            </div>
+            <div class="project-title">
+                <h2>USC Student Government Projects</h2>
+                <p>2021-2023 | Promotional Campaigns + Graphics</p>
+                <br>
+                <p>Photoshop, Video Editing, Graphic Design</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="project">
+        <a href="design-two.html">
+            <div class="project-imgage">
+                <img id="earth-logo" src="img/earth.png" alt="earth-logo">
+            </div>
+            <div class="project-title">
+                <h2>Environmental Communications</h2>
+                <p>2022 | Website Design, Merchandise + Graphics</p>
+                <br>
+                <p>Adobe Suite, Video Editing, Illustration</p>
+            </div>
+        </a>
+    </div>
+
+    <div id="footer">
+        <h2>Thanks for visiting! Let's get in touch 👋</h2>
+        <div id="foot-design">
+            <a href="https://www.linkedin.com/in/alexpalakian/" target="_blank">LinkedIn</a>
+            |
+            <a href="https://www.instagram.com/alexpalakian/" target="_blank">Instagram</a>
+            |
+            <a href="mailto:palakian@usc.edu" target="_blank">Email</a>
+        </div>
+        <p><em>Coded with love (and coffee) by Alex Palakian</em></p>
+    </div>
+   
+
+</body>
+</html>

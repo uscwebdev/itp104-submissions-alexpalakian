@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Connect with me for internships, inquiries, or just to say hello! Reach out through the provided channels and let's start a conversation.">
+    <meta name="keyword" content="HTML, Personal Portfolio, ITP 104, Final Project, Alex, Palakian, USC">
+	<title>Personal Website (contact page) | Alex Palakian</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@12..96&family=Dancing+Script&family=Oswald&family=Quicksand&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+	<style>
+        h1 {
+            font-family: 'Payfair Display', serif;
+            text-align: center;
+            position: relative;
+            top: 80px;
+            font-size: 2em;
+        }
+        h2 {
+            font-family: 'Payfair Display', serif;
+            font-weight: 100;
+            text-align: center;
+            position: relative;
+            top: 85px;
+            width: 700px;
+            margin-right: auto;
+            margin-left: auto;
+            line-height: auto;
+        }
+        #contact-box {
+            width: 500px;
+            height: 430px;
+            position: relative;
+            margin-right: auto;
+            margin-left: auto;
+            top: 95px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            border: 1px solid #1C1C1F;
+        }
+        .form {
+            margin: 25px 0px;
+        }
+        label {
+            font-family: 'Payfair Display', serif;
+        }
+        .contactlabel {
+            display: block;
+            width: 100px;
+            float: left;
+        }
+        input[type=text], select {
+            font-family: 'Payfair Display', serif;
+            font-style: italic;
+            width: 400px;
+            padding: 10px 10px;
+            display: inline-block;
+            border: 1px solid rgb(228, 233, 225);
+            background-color: rgb(228, 233, 225);
+            border-radius: 3px;
+            box-sizing: border-box;
+		}
+        input[type=email], select {
+            font-family: 'Payfair Display', serif;
+            font-style: italic;
+            width: 400px;
+            padding: 10px 10px;
+            display: inline-block;
+            border: 1px solid rgb(228, 233, 225);
+            background-color: rgb(228, 233, 225);
+            border-radius: 3px;
+            box-sizing: border-box;
+		}
+        textarea {
+            font-family: 'Payfair Display', serif;
+            font-style: italic;
+            width: 400px;
+            height: 200px;
+            padding: 10px 10px;
+            box-sizing: border-box;
+            border: 1px solid rgb(228, 233, 225);
+            border-radius: 3px;
+            background-color: rgb(228, 233, 225);
+            resize: none;
+        }
+        button {
+            padding: 10px 25px;
+            border-radius: 25px;
+            border: 1px solid #1C1C1F;
+            background-color: rgb(228, 233, 225);
+        }
+        .bottons {
+            text-align: center;
+            padding: 10px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        #contact-box .buttons:hover {
+            cursor: pointer;
+            font-style: italic;
+        }
+        #contact-box .contactlabel {
+            font-family: 'Oswald', sans-serif;
+            color:#1C1C1F;
+            font-size: 1.1em;
+            letter-spacing: 1.15px;
+        }
+        #contact-box .buttons {
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: 1.15px;
+            font-size: 1.1em;
+            color: #1C1C1F;
+        }
+       .buttons-container {
+            text-align: right;
+       }
+       #footer {
+        position: relative;
+        top: 125px;
+        height: auto;
+        padding-bottom: 20px;
+       }
+       h2 a {
+        text-decoration: none;
+        color:#1C1C1F;
+       }
+       h2 a:hover {
+        text-decoration: underline 1px solid #1C1C1F;
+       }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a id="home" href="homepage.html">ALEX PALAKIAN</a>
+        <a class="about" href="aboutpage.html">ABOUT</a>
+        <a class="design" href="designpage.html">DESIGN</a>
+        <a class="code" href="codepage.html">CODE</a>
+        <a class="contact" href="contactpage.html">CONTACT</a>
+    </div>
+
+    <div id="header">
+        <h1>Let's Chat!</h1>
+        <h2><em>I'm available for internships, freelance projects, and full-time positions. 
+            You can contact me using the form below, or by emailing</em>
+            <a href="mailto:palakian@usc.edu" target="_blank"><em> palakian@usc.edu</em></a> 😃</h2>
+    </div>
+
+    <div id="contact-box">
+        <form action="confirmation.html">
+            <div class="form">
+                <label for="name-id" class="contactlabel">
+                    <strong>NAME:</strong>
+                </label>
+                <input type="text" placeholder="Tommy Trojan" id="name-id">
+            </div>
+            <div class="form">
+                <label for="email-id" class="contactlabel">
+                    <strong>EMAIL:</strong>
+                </label>
+                <input type="email" placeholder="tommytrojan@usc.edu" id="email-id">
+            </div>
+            <div class="form">
+                <label for="message" class="contactlabel">
+                    <strong>MESSAGE:</strong>
+                </label>
+                <textarea id="message" placeholder="I promise I'll get back to you (pinky promise)!"></textarea>
+            </div>
+            <div class="form buttons-container">
+                <button class="buttons" type="reset"><strong>UNDO</strong></button>
+                <button class="buttons" class="send" type="submit"><strong>SEND</strong></button>
+            </div>
+        </form>
+    </div>
+
+    <div id="footer">
+        <h3>
+            <a href="https://www.linkedin.com/in/alexpalakian/" target="_blank">LinkedIn</a>
+            |
+            <a href="https://www.instagram.com/alexpalakian/" target="_blank">Instagram</a>
+            |
+            <a href="mailto:palakian@usc.edu" target="_blank">Email</a>
+        </h3>
+        <p><em>Coded with love (and coffee) by Alex Palakian</em></p>
+    </div>
+
+</body>
+</html>

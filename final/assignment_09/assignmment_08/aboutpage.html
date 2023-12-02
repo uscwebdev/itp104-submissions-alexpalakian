@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Explore my journey, skills, and passions. Learn more about who I am, my experiences, 
+    and how I bring creativity and expertise to every endeavor. Discover the story behind the person driving innovation and growth!">
+    <meta name="keyword" content="HTML, Personal Portfolio, ITP 104, Final Project, Alex, Palakian, USC">
+	<title>Personal Website (about page) | Alex Palakian</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@12..96&family=Dancing+Script&family=Oswald&family=Quicksand&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+	<style>
+        #main-picture {
+            position: relative;
+            top: 80px;
+            height: 1120px;
+        }
+        .image-container {
+            width: 900px;
+            height: 1100px;
+            overflow: hidden;
+            position: relative;
+            left: 540px;
+            border-radius: 15px;
+            border: 1px solid #1C1C1F;
+        }
+        .main {
+            position: absolute;
+            bottom: 50px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: auto;
+        }
+        .main-text {
+            position: absolute;
+            text-align: center;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 100;
+            font-size: 2em;
+            color: #1C1C1F;
+            top: 150px;
+            left: 50px;
+            width: 53%;
+            padding: 10px;
+        }
+       
+        #resume-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            top: 80px;
+            height: 925px;
+            overflow: hidden;
+            width: auto;
+            z-index: 2;
+            background-color: #00A45B;
+            padding-right: 75px;
+            padding-left: 75px;
+            margin-top: 30px;
+            border-top: 1px solid #1C1C1F;
+            border-bottom: 1px solid #1C1C1F;
+        }
+        #resume-section a {
+            width: 600px;
+            font-family: 'Payfair Display', serif;
+            color: #1C1C1F;
+            text-decoration: none;
+            text-align: center;
+            font-style: italic;
+            font-size: 1.25em;
+            line-height: 0.5;
+        }
+        .resume-image {
+            flex: 1;
+            margin-top: 50px;
+            height: 800px;
+            width: 600px;
+            border-radius: 15px;
+            border: 1px solid #1C1C1F;
+            background-color: #1C1C1F;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+        .resume-image:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        .resume-text {
+            margin-top: 50px;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 100;
+            font-size: 2em;
+            color: #1C1C1F;
+            padding: 0 20px;
+            flex: 1;
+            max-width: 50%;
+        }
+
+        #aboutme-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            top: 80px;
+            overflow: hidden;
+            width: auto;
+            z-index: 2;
+            background-color: #00A45B;
+            padding-right: 75px;
+            padding-left: 75px;
+            padding-top: 30px;
+            font-family: 'Payfair Display', serif;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #1C1C1F;
+        }
+        .col-one {
+            font-family: 'Payfair Display', serif;
+            font-weight: 100;
+            font-size: 1.5em;
+            color: #1C1C1F;
+            padding: 0 20px;
+            flex: 1;
+            max-width: 50%;
+        }
+        .col-two {
+            font-family: 'Payfair Display', serif;
+            font-weight: 100;
+            font-size: 1.5em;
+            color: #1C1C1F;
+            padding: 0 20px;
+            flex: 1;
+            max-width: 50%;
+        }
+        #footer {
+            z-index: 2;
+            position: relative;
+            top: 80px;
+            padding-top: 40px;
+        }
+        #footer a {
+            font-family: 'Payfair Display', serif;
+        }
+        .obama {
+            position: absolute;
+            margin-left: 40px;
+            top: 800px;
+            width: 450px;
+            height: 300px;
+            border-radius: 15px;
+            border: 1px solid #1C1C1F;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a id="home" href="homepage.html">ALEX PALAKIAN</a>
+        <a class="about" href="aboutpage.html">ABOUT</a>
+        <a class="design" href="designpage.html">DESIGN</a>
+        <a class="code" href="codepage.html">CODE</a>
+        <a class="contact" href="contactpage.html">CONTACT</a>
+    </div>
+
+    <div id="main-picture">
+        <div class="image-container">
+            <img class="main" src="img/personality_pic.JPG" alt="me">
+        </div>
+        <div class="main-text">
+            <h1>I'm ready to combine my passion for learning, former experiences, and creativity to help acheive your business goals!</h1>
+        </div>
+        <div id="image-container">
+            <img class="obama" src="img/obama.jpg" alt="Obama Picture">
+        </div>
+    </div>
+
+    <div id="resume-section">
+        <a href="file/PALAKIAN_RESUME.pdf" target="_blank">
+            <img class="resume-image" src="img/resume.jpg" alt="Resume">
+            <p>📌 Click on the resume or <strong>here</strong> to view!</p>
+        </a>
+        <div class="resume-text">
+            <h1>Hi there! My name is Alex Palakian, and I'm a junior at the University of Southern California studying Economics & Data Science 
+                with a minor in Environmental Science</h1>
+        </div>
+    </div>
+    <div id="aboutme-info">
+        <div class="col-one">
+            <p>🌱 I am very passionate about the <em>intersection of sustainability, business, and technology</em>, and having the liberty to innovate, problem-solve unique 
+                business challenges, and combine creativity and strategy in my work.</p>
+            <p>💻 Most recently, I was working as a Product Management Intern at Boo (startup) which has allowed me to fully participate in <u>identifying consumer needs, 
+                larger business objectives, and stakeholder demands</u> that bridged my interdisciplinary passions. Thus, through my work experience and classes, I've found 
+                I'm driven by two questions:</p>
+        </div>
+        <div class="col-two">
+            <ul>
+                <li>How can we better understand consumers to best meet their needs?</li>
+                <li>How can we leverage technology and data analysis to generate inventive solutions?</li>
+            </ul>
+            <p>📈 Whether it be product management, consulting, or business development, these questions motivate me to think <em>creatively and analytically</em>, and continue to explore. 
+                And when I'm not working, you can find me at the pool, roaming the aisles of Trader Joe's, or fueling my love for coffee at new cafes.</p>
+            <p>🌎 Thanks for stopping by and taking the time to learn about me! Please feel free to connect or reach out to me! </p>
+        </div>
+
+    </div>
+        
+    <div id="footer">
+        <h2>Thanks for visiting! Let's get in touch 👋</h2>
+        <h3>
+            <a href="https://www.linkedin.com/in/alexpalakian/" target="_blank">LinkedIn</a>
+            |
+            <a href="https://www.instagram.com/alexpalakian/" target="_blank">Instagram</a>
+            |
+            <a href="mailto:palakian@usc.edu" target="_blank">Email</a>
+        </h3>
+        <p><em>Coded with love (and coffee) by Alex Palakian</em></p>
+    </div>
+
+</body>
+</html>

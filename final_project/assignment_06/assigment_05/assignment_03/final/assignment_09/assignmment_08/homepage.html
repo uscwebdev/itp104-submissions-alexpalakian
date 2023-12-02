@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Hi, I'm Alex: an economics and data science student at the University of Southern California, 
+    a programming enthusiast, and a creative. Welcome to my personal portfolio!">
+    <meta name="keyword" content="HTML, Personal Portfolio, ITP 104, Final Project, Alex, Palakian, USC">
+	<title>Personal Website (homepage) | Alex Palakian</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@12..96&family=Dancing+Script&family=Oswald&family=Quicksand&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+	<style>
+        .img-content {
+            width: 100%;
+            height: 800px;
+            position: fixed;
+            background-color: #00A45B;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .images {
+            width: 600px;
+            height: 485px;
+            border-radius: 15px;
+            border: 1px solid #1C1C1F;
+        }
+        .text-content {
+            width: 100%;
+            top: 800px;
+            position: relative;
+            background-color: #00A45B;
+            border-top: 1px solid #1C1C1F;
+        }
+        #container {
+            font-family: 'Playfair Display', serif;
+            color: #1C1C1F;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1100px;
+            margin-bottom: 90px;
+        }
+        .name {
+            font-family: 'Oswald', sans-serif;
+            text-align: center;
+            font-weight: 100;
+            font-size: 11em;
+            line-height: 0.75;
+            padding: 0;
+        }
+        .description-one {
+            text-align: center;
+            font-weight: 100;
+            font-size: 5em;
+        }
+        .description {
+            text-align: center;
+            font-weight: 100;
+            font-size: 3.5em;
+        }
+        #media {
+            background-color: #00A45B;
+            display: flex;
+            justify-content: center;
+            width: auto;
+            position: relative;
+            padding-bottom: 0px;
+        }
+        .social {
+            color:#1C1C1F;
+            width: 70px;
+            height: 70px;
+            background-color: #00A45B;
+            position: relative;
+            top: 20px;
+        }
+        .social_gram {
+            color:#1C1C1F;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            top: 30px;
+            background-color: #00A45B;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a id="home" href="homepage.html">ALEX PALAKIAN</a>
+        <a class="about" href="aboutpage.html">ABOUT</a>
+        <a class="design" href="designpage.html">DESIGN</a>
+        <a class="code" href="codepage.html">CODE</a>
+        <a class="contact" href="contactpage.html">CONTACT</a>
+    </div>
+
+    <div class="img-content">
+        <img class="images" src="img/home1.jpg" alt="Profile Pic">
+        <img class="images" src="img/home2.jpg" alt="EA Pic">
+        <img class="images" src="img/home3.JPG" alt="Taylor Pic">
+        <img class="images" src="img/home4.jpg" alt="ESA Pic">
+        <img class="images" src="img/home5.jpg" alt="USC Pic">
+    </div>
+    <div class="text-content">
+        <div id="container">
+            <h1 class="name">Hi, I'm Alex</h1>
+            <h2 class="description-one">I'm a data-driven analyst, problem-solver, sustainable-thinker, technology-enthusiast, innovator, visual artist, 
+                coffee-lover, and Trader Joe's fanatic!</h2>
+            <h2 class="description">Oh, I'm also an Economics & Data Science student at the University of Southern California ✌</h2>
+        </div>
+      
+        <div id="footer">
+            <h2>Thanks for visiting! Let's get in touch 👋</h2>
+            <h3>
+                <a href="https://www.linkedin.com/in/alexpalakian/" target="_blank">LinkedIn</a>
+                |
+                <a href="https://www.instagram.com/alexpalakian/" target="_blank">Instagram</a>
+                |
+                <a href="mailto:palakian@usc.edu" target="_blank">Email</a>
+            </h3>
+            <p><em>Coded with love (and coffee) by Alex Palakian</em></p>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        carousel();
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("images");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+                slideIndex = 1;
+            }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 1150);
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Dive into my code playground where creativity meets functionality. Explore a collection of projects, 
+    snippets, and innovative solutions. Witness the art of coding and discover the passion behind every line!">
+    <meta name="keyword" content="HTML, Personal Portfolio, ITP 104, Final Project, Alex, Palakian, USC">
+	<title>Personal Website (code page) | Alex Palakian</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@12..96&family=Dancing+Script&family=Oswald&family=Quicksand&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+
+	<style>
+        body {
+            background-color: #1C1C1F;
+        }
+        #navbar a { 
+            color: #00A45B;
+        }
+        #navbar {
+            background-color: #1C1C1F;
+            border-bottom: 1px solid #00A45B;
+        }
+        #container {
+            position: relative;
+            top: 350px;
+            height: 500px;
+        }
+        #introduction {
+            font-family: "Fira Code", serif;
+            color: white;
+            font-size: 2.5em;
+            width: 700px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        #scroll {
+            text-align: center;
+            position: absolute;
+            top: 225px;
+            left: 42%;
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 2em;
+            color: white;
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: 1.15px;
+        }
+        #box-container {
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 350px;
+            height: 650px;
+            margin: 5px 20px;
+            border-bottom: 1px solid #00A45B;
+        }
+        .box {
+            width: 30%;
+            height: 500px;
+            background-color: #00A45B;
+            border-radius: 10px;
+            padding: 20px;
+            margin-left: 5px;
+            margin-right: 5px;
+            text-align: center;
+            color: #fff;
+        }
+        h1 {
+            text-align: center;
+            color: #1C1C1F;
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: 1.25px;
+        }
+        .button-container {
+            margin-top: 225px;
+        }
+        .button {
+            display: inline-block;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 10px 20px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.25em;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border: 1px solid #1C1C1F;
+            color: #1C1C1F;
+            background-color: rgb(228, 233, 225);
+            border-radius: 25px;
+        }
+        .button:hover {
+            font-style: italic;
+        }
+        .blurb {
+            padding: 5px;
+            font-family: 'Payfair Display', serif;
+            font-style: italic;
+            color:#1C1C1F;
+            margin: 5px;
+            line-height: 30px;
+            text-align: left;
+            font-size: 1.25em;
+            height: 30px;
+        }
+        #footer {
+            position: relative;
+            top: 375px;
+            background-color:#1C1C1F;
+            color: white;
+        }
+        #footer a {
+            color: white;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a id="home" href="homepage.html">ALEX PALAKIAN</a>
+        <a class="about" href="aboutpage.html">ABOUT</a>
+        <a class="design" href="designpage.html">DESIGN</a>
+        <a class="code" href="codepage.html">CODE</a>
+        <a class="contact" href="contactpage.html">CONTACT</a>
+    </div>
+
+    <div id="container">
+        <div id="introduction"></div>
+        <div id="scroll">
+            <p>SCROLL DOWN 👇</p>
+        </div>
+    </div>
+
+    <div id="box-container">
+        <div class="box">
+            <h1>HTML/CSS/JAVASCRIPT</h1>
+            <p class="blurb">
+                ⭐ I specialize in crafting dynamic and responsive websites using HTML, CSS, and JavaScript. My expertise encompasses 
+                creating clean and semantic HTML structures, designing stylish interfaces with CSS, and implementing interactive 
+                functionalities with JavaScript, ensuring both visually appealing and user-friendly web applications.
+            </p>
+            <div class="button-container">
+                <a href="https://github.com/uscwebdev/itp104-submissions-alexpalakian.git" target="_blank" class="button">MY PORTFOLIO</a>
+            </div>
+        </div>
+        <div class="box">
+            <h1>PYTHON</h1>
+            <p class="blurb">
+                ⭐ Proficient in Python, I leverage fundamental structures such as lists to manage data efficiently. Employing loops, 
+                including 'for' and 'while', I iterate through data sets and implement conditional statements for effective decision-making 
+                in code logic.
+            </p>
+            <div class="button-container">
+                <a href="https://github.com/alexpalakian/itp115-projects.git" target="_blank" class="button">MY PORTFOLIO</a>
+            </div>
+        </div>
+        <div class="box">
+            <h1>C++</h1>
+            <p class="blurb">
+                ⭐ As a seasoned C++ developer, I excel in harnessing key language structures such as arrays, loops, and conditional statements, 
+                while leveraging the power of pointers for effective memory management.
+            </p>
+            <div class="button-container">
+                <a href="comingsoon.html" target="_blank" class="button">MY PORTFOLIO</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <h2>Thanks for visiting! Let's get in touch 👋</h2>
+        <h3>
+            <a href="https://www.linkedin.com/in/alexpalakian/" target="_blank">LinkedIn</a>
+            |
+            <a href="https://www.instagram.com/alexpalakian/" target="_blank">Instagram</a>
+            |
+            <a href="mailto:palakian@usc.edu" target="_blank">Email</a>
+        </h3>
+        <p><em>Coded with love (and coffee) by Alex Palakian</em></p>
+    </div>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script>
+        var app = document.getElementById('introduction');
+
+        var typewriter = new Typewriter(app, {
+        loop: true,
+        delay: 50,
+        });
+
+        typewriter
+            .pauseFor(200)
+            .typeString('Throughout my USC experience, I have taken many programming courses')
+            .pauseFor(500)
+            .deleteChars(70)
+            .typeString('Here is some of the code I have written:')
+            .pauseFor(5000)
+            .start();
+
+    </script>
+
+</body>
+</html>
